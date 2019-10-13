@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <!--Nome da unidade mapeada-->
+  <persistence-unit name="tarefas">
+      
+    <!--Nome do provedor/implementação JPA-->
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    
+    <!--Entidade mapeada-->
+    <class>br.com.ifpe.modelo.Aluno</class>
+    <class>br.com.ifpe.modelo.Tamanho</class>
+    <class>br.com.ifpe.modelo.Fardamento</class>
+    <class>br.com.ifpe.modelo.Livro</class>
+    <class>br.com.ifpe.modelo.Situacao</class>
+    <class>br.com.ifpe.modelo.Emprestimo</class>
+    <class>br.com.ifpe.modelo.Volume</class>    
+    <class>br.com.ifpe.modelo.Usuario</class>
+    <class>br.com.ifpe.modelo.Professor</class>
+    <class>br.com.ifpe.modelo.Bolsa</class>
+    
+    <properties>
+      <!--Dados da conexão-->
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bd_sae"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="root"/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+      
+      <!--Dados do EclipseLink-->
+      <property name="eclipselink.logging.level" value="FINE"/>
+      <!--<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>-->
+      <property name="eclipselink.weaving" value="static"/>
+      <property name="eclipselink.jdbc.native-sql" value="true"/>
+      <property name="eclipselink.target-database" value="MySQL"/>
+    </properties>
+  </persistence-unit> 
+</persistence>
