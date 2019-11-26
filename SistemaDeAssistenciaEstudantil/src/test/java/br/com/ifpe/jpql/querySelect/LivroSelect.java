@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.ifpe.jpql.querySelect;
 
 import br.com.ifpe.modelo.Emprestimo;
@@ -17,10 +12,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 import org.junit.Test;
 
-/**
- *
- * @author wolner
- */
+
 public class LivroSelect extends GenericTest{
  
     //Uso de SELECT ANINHADO

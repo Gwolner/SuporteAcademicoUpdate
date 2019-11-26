@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.ifpe.jpql.querySelect;
 
 import br.com.ifpe.modelo.Volume;
@@ -14,16 +9,13 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import org.junit.Test;
 
-/**
- *
- * @author wolner
- */
+
 public class VolumeSelect extends GenericTest{
 
     //Uso de ORDER BY DESC
     @Test
-    public void ordenacaoVolumes() {
-        logger.info("Executando ordenacaoVolumes()");
+    public void ordenacaoDescVolumes() {
+        logger.info("Executando ordenacaoDescVolumes()");
         TypedQuery<Volume> query;
         query = em.createQuery(
                 "SELECT v FROM Volume v ORDER BY v.descricaoVolume DESC",

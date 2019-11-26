@@ -20,10 +20,16 @@
     
     <properties>
       <!--Dados da conexão-->
-      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bd_sae"/>
+<!--      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bd_sae"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
       <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-      <property name="javax.persistence.jdbc.password" value="root"/>
+      <property name="javax.persistence.jdbc.password" value="root"/>-->
+      
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://192.168.0.49:3306/bd_guilherme"/>
+      <property name="javax.persistence.jdbc.user" value="usuario49"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="B@s3@t3st15"/>
+      
       <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
       
       <!--Dados do EclipseLink-->

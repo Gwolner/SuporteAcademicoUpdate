@@ -25,8 +25,9 @@ public class DbUnitUtil {
         IDatabaseConnection db_conn = null;
         try {
             conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/bd_sae", "root", "root");
-            db_conn = new DatabaseConnection(conn, "bd_sae");
+//                    "jdbc:mysql://localhost:3306/bd_sae", "root", "root");
+                    "jdbc:mysql://192.168.0.49:3306/bd_guilherme", "usuario49", "B@s3@t3st15");
+            db_conn = new DatabaseConnection(conn, "bd_guilherme");
             DatabaseConfig dbConfig = db_conn.getConfig();
             dbConfig.setProperty(DatabaseConfig.PROPERTY_DATATYPE_FACTORY, new MySqlDataTypeFactory());
             dbConfig.setProperty(DatabaseConfig.PROPERTY_METADATA_HANDLER, new MySqlMetadataHandler());

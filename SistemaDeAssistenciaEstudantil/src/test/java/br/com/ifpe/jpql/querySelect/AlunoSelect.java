@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.ifpe.jpql.querySelect;
 
 import br.com.ifpe.modelo.Aluno;
@@ -12,10 +7,7 @@ import javax.persistence.TypedQuery;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
-/**
- *
- * @author wolner
- */
+
 public class AlunoSelect extends GenericTest{
     
     //Uso do COUNT (Alunos maior de idade)

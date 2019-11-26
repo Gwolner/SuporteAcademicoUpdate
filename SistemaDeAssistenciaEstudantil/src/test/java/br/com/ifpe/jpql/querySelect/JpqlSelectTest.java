@@ -278,4 +278,46 @@ public class JpqlSelectTest extends GenericTest {
         
         assertEquals(6, itens.size());
     }
+    
+    //Uso do JOIN (Tabelas tb_livro e tb_volume)
+    @Test
+    public void livrosTituloComVolume() {
+        logger.info("Executando livrosTituloComVolume()");
+        TypedQuery<Livro> query;
+        query = em.createQuery(
+                "SELECT l.titulo, v.descricaoVolume "
+                + "FROM Livro l "
+                + "JOIN l.volume v "
+                + "WHERE l.materia = ?1 ",
+                Livro.class);
+        query.setParameter(1, "Matematica");
+        List<Livro> livro = query.getResultList();
+        
+        assertEquals(2, livro.size());
+        
+//        assertEquals("Introducao a matematica", livro.get(0).);
+//        assertEquals("Introducao a matematica", livro.get(1).getTitulo());
+
+    }
+    
+    //Uso do JOIN (Tabelas tb_livro e tb_volume)
+    @Test
+    public void livrosTituloComVolume() {
+        logger.info("Executando livrosTituloComVolume()");
+        TypedQuery<Livro> query;
+        query = em.createQuery(
+                "SELECT l.titulo, v.descricaoVolume "
+                + "FROM Livro l "
+                + "JOIN l.volume v "
+                + "WHERE l.materia = ?1 ",
+                Livro.class);
+        query.setParameter(1, "Matematica");
+        List<Livro> livro = query.getResultList();
+        
+        assertEquals(2, livro.size());
+        
+//        assertEquals("Introducao a matematica", livro.get(0).);
+//        assertEquals("Introducao a matematica", livro.get(1).getTitulo());
+
+    }
 }

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.ifpe.jpql.querySelect;
 
 import br.com.ifpe.modelo.Bolsa;
@@ -13,10 +8,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
-/**
- *
- * @author wolner
- */
+
 public class BolsaSelect extends GenericTest{
     
     
@@ -32,8 +24,7 @@ public class BolsaSelect extends GenericTest{
         assertEquals(600.00, bolsas[0]);
         assertEquals(0.00, bolsas[1]);
 
-    }
-    
+    }    
     
     //Uso do WHERE BETWEEN
     @Test
