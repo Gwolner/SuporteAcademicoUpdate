@@ -1,5 +1,6 @@
 package br.com.ifpe.modelo;
 
+import br.com.ifpe.validador.ValidaIsbn;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +15,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
@@ -23,8 +26,18 @@ import org.hibernate.validator.constraints.NotBlank;
 @Entity
 @Table(name="TB_LIVRO")
 @Access(AccessType.FIELD)
+@NamedQueries(
+        {
+        @NamedQuery(
+        name =  Livro.LIVRO_POR_NOME,
+        query = "SELECT l FROM Livro l WHERE l.titulo like :nome"
+                )
+        }
+)
 public class Livro implements Serializable {
     
+    public static final String LIVRO_POR_NOME = "LivroPorNome";
+
     public Livro() {
         this.emprestimos = new ArrayList<>();
     }

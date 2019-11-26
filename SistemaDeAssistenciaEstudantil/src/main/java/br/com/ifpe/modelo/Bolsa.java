@@ -11,6 +11,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -19,7 +21,18 @@ import org.hibernate.validator.constraints.NotBlank;
 @Entity
 @Table(name="TB_BOLSA")
 @Access(AccessType.FIELD)
+@NamedQueries(
+        {
+        @NamedQuery(
+        name = Bolsa.BOLSA_POR_NOME,
+        query = "SELECT b FROM Bolsa b WHERE b.nomeBolsa like :nomeBolsa"
+                )
+        }
+)
 public class Bolsa implements Serializable {
+    
+        public static final String BOLSA_POR_NOME= "BolsaPorNome";
+
     
     public Bolsa() {
         this.alunos = new ArrayList<>();

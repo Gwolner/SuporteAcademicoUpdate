@@ -1,5 +1,6 @@
 package br.com.ifpe.modelo;
 
+import br.com.ifpe.validador.ValidaMatricula;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +12,8 @@ import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
@@ -27,7 +30,17 @@ import org.hibernate.validator.constraints.NotBlank;
         name="id_aluno", //Nome da coluna PK de Aluno
         referencedColumnName="id_usuario" //Referencia a PK de Usuario
 )
+@NamedQueries(
+        {
+        @NamedQuery(
+        name = Aluno.ALUNO_POR_NOME,
+        query = "SELECT a FROM Aluno a WHERE a.nomeUsuario like :nome"
+                )
+        }
+)
 public class Aluno extends Usuario implements Serializable{
+    
+    public static final String ALUNO_POR_NOME= "Aluno_Por_Nome";
     
     public Aluno() {
         this.fardamentos = new ArrayList<>();

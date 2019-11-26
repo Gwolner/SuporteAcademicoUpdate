@@ -4,6 +4,8 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
@@ -17,7 +19,17 @@ import org.hibernate.validator.constraints.NotBlank;
         name="id_professor", //Nome da coluna PK de Professor
         referencedColumnName="id_usuario" //Referencia a PK de Usuario
 )
-public class Professor extends Usuario implements Serializable {
+@NamedQueries(
+        {
+        @NamedQuery(
+        name = Professor.PROFESSOR_POR_NOME,
+        query = "SELECT p FROM Professor p WHERE p.nomeUsuario like :nome"
+                )
+        }
+)
+public class Professor extends Usuario implements Serializable{
+    
+    public static final String PROFESSOR_POR_NOME= "Professor_Por_Nome";
     
     @Column(name="siape")
     private int siape;

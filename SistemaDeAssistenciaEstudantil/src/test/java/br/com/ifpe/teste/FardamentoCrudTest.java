@@ -1,10 +1,7 @@
 package br.com.ifpe.teste;
 
 
-import br.com.ifpe.modelo.Aluno;
 import br.com.ifpe.modelo.Fardamento;
-import br.com.ifpe.modelo.Situacao;
-import br.com.ifpe.modelo.Tamanho;
 import java.util.HashMap;
 import java.util.Map;
 import javax.persistence.CacheRetrieveMode;

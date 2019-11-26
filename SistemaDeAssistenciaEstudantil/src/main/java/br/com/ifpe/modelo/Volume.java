@@ -12,6 +12,8 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Size;
@@ -20,7 +22,18 @@ import org.hibernate.validator.constraints.NotBlank;
 @Entity
 @Table(name="TB_VOLUME")
 @Access(AccessType.FIELD)
+@NamedQueries(
+        {
+        @NamedQuery(
+        name = Volume.VOLUME_POR_DESCRICAO,
+        query = "SELECT v FROM Volume v WHERE v.descricaoVolume like :descricao"
+                )
+        }
+)
 public class Volume implements Serializable {
+    
+    public static final String VOLUME_POR_DESCRICAO = "VolumePorDescricao";
+
     
     public Volume() {
         this.livros = new ArrayList<>();

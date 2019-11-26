@@ -142,7 +142,7 @@
               curso="Quimica" 
               turno="Manha" 
               matricula="7777KSKS" 
-              responsavel="18+" 
+              responsavel="Ioná" 
               contato_responsavel="958412575" 
               email="minhaquimica@gmail.com"/>
     <!-- Aluno ID 6 -->
@@ -158,7 +158,7 @@
               curso="Mecanica" 
               turno="Manha" 
               matricula="8765TGHJ" 
-              responsavel="18+" 
+              responsavel="Lucilia" 
               contato_responsavel="955619735" 
               email="foster@gmail.com"/>
     <!-- Aluno ID 8 -->
