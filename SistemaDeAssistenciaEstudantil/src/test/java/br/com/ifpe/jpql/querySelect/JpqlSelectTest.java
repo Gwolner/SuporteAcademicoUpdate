@@ -288,7 +288,7 @@ public class JpqlSelectTest extends GenericTest {
                 "SELECT l.titulo, v.descricaoVolume "
                 + "FROM Livro l "
                 + "JOIN l.volume v "
-                + "WHERE l.materia = ?1 ",
+                + "ON l.materia = ?1 ",
                 Livro.class);
         query.setParameter(1, "Matematica");
         List<Livro> livro = query.getResultList();
@@ -300,24 +300,21 @@ public class JpqlSelectTest extends GenericTest {
 
     }
     
-    //Uso do JOIN (Tabelas tb_livro e tb_volume)
+    //Uso do JOIN (Tabelas tb_aluno e tb_bolsa)
     @Test
-    public void livrosTituloComVolume() {
-        logger.info("Executando livrosTituloComVolume()");
-        TypedQuery<Livro> query;
+    public void bolsaDeAlunoPorMatricula() {
+        logger.info("Executando bolsaDeAlunoPorMatricula()");
+        TypedQuery<Aluno> query;
         query = em.createQuery(
-                "SELECT l.titulo, v.descricaoVolume "
-                + "FROM Livro l "
-                + "JOIN l.volume v "
-                + "WHERE l.materia = ?1 ",
-                Livro.class);
-        query.setParameter(1, "Matematica");
-        List<Livro> livro = query.getResultList();
+                "SELECT a.nomeUsuario, b.nomeBolsa, b.tipo, b.valor "
+                + "FROM Aluno a "
+                + "JOIN a.bolsas b "
+                + "WHERE a.matricula= ?1 ",
+                Aluno.class);
+        query.setParameter(1, "1234ABCD");
+        List<Aluno> itens = query.getResultList();
         
-        assertEquals(2, livro.size());
+        assertEquals(2, itens.size());
         
-//        assertEquals("Introducao a matematica", livro.get(0).);
-//        assertEquals("Introducao a matematica", livro.get(1).getTitulo());
-
     }
 }

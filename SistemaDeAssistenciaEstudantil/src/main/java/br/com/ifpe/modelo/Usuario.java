@@ -107,17 +107,7 @@ public class Usuario implements Serializable { //Classe Pai na herança
     public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     public List<Emprestimo> getEmprestimos() {
         return emprestimos;
