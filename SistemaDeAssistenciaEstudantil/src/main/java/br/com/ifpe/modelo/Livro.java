@@ -28,15 +28,15 @@ import org.hibernate.validator.constraints.NotBlank;
 @Access(AccessType.FIELD)
 @NamedQueries(
         {
-        @NamedQuery(
-        name =  Livro.LIVRO_POR_NOME,
-        query = "SELECT l FROM Livro l WHERE l.titulo like :nome"
-                )
+            @NamedQuery(
+                name =  Livro.LIVRO_POR_TITULO,
+                query = "SELECT l FROM Livro l WHERE l.titulo like :titulo"
+            )
         }
 )
 public class Livro implements Serializable {
     
-    public static final String LIVRO_POR_NOME = "LivroPorNome";
+    public static final String LIVRO_POR_TITULO = "LivroPorTitulo";
 
     public Livro() {
         this.emprestimos = new ArrayList<>();

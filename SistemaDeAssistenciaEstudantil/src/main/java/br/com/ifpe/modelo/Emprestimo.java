@@ -12,6 +12,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.validation.constraints.Future;
@@ -21,9 +23,24 @@ import org.hibernate.validator.constraints.NotBlank;
 
 @Entity
 @Table(name = "TB_EMPRESTIMO")
+@NamedQueries(
+    {
+        @NamedQuery(
+            name = Emprestimo.STATUS_POR_ID,
+            query = "SELECT e FROM Emprestimo e WHERE e.idEmprestimo = ?1"
+        ),
+        @NamedQuery(
+            name = Emprestimo.STATUS_DOS_EMPRESTIMOS,
+            query = "SELECT e.status FROM Emprestimo e ORDER BY e.idEmprestimo"
+        )
+    }
+)
 @Access(AccessType.FIELD)
 public class Emprestimo implements Serializable {
 
+    public static final String STATUS_POR_ID = "Status_Por_Id";
+    public static final String STATUS_DOS_EMPRESTIMOS = "StatusDosEmprestimos";
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_emprestimo")

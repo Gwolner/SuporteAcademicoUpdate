@@ -3,6 +3,7 @@ package br.com.ifpe.jpql.querySelect;
 import br.com.ifpe.modelo.Emprestimo;
 import br.com.ifpe.modelo.Livro;
 import br.com.ifpe.crud.GenericTest;
+import br.com.ifpe.modelo.Livro;
 import java.util.List;
 import javax.persistence.TypedQuery;
 import org.hamcrest.CoreMatchers;
@@ -15,6 +16,24 @@ import org.junit.Test;
 
 public class LivroSelectTest extends GenericTest{
  
+    /*############################ NAMEDQUERY ############################*/
+    
+    //Uso do NAMEDQUERY Livro.LIVRO_POR_TITULO
+    @Test
+    public void situacaoPorDescricao() {
+        logger.info("Executando situacaoPorDescricao()");
+        TypedQuery<Livro> query = em.createNamedQuery(
+                Livro.LIVRO_POR_TITULO, Livro.class
+        );
+        query.setParameter("titulo", "Java%");
+        List<Livro> volumes = query.getResultList();
+
+        assertEquals(1, volumes.size());
+        assertEquals("Java: Como Programar", volumes.get(0).getTitulo()); 
+    }
+    
+    /*########################### CREATEQUERY ############################*/
+    
     //Uso de SELECT ANINHADO
     @Test
     public void livrosVolUnico() {
@@ -77,5 +96,22 @@ public class LivroSelectTest extends GenericTest{
         }
 
         assertEquals(17, emprestimos.size());
+    }
+    
+    //Uso do JOIN (Tabelas tb_livro e tb_volume)
+    @Test
+    public void livrosTituloComVolume() {
+        logger.info("Executando livrosTituloComVolume()");
+        TypedQuery<Livro> query;
+        query = em.createQuery(
+                "SELECT l.titulo, v.descricaoVolume "
+                + "FROM Livro l "
+                + "JOIN l.volume v "
+                + "ON l.materia = ?1 ",
+                Livro.class);
+        query.setParameter(1, "Matematica");
+        List<Livro> livro = query.getResultList();
+        
+        assertEquals(2, livro.size());
     }
 }

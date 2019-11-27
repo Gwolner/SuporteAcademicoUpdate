@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="br.com.ifpe.jpql.querySelect.JpqlSelectTest" time="35.228" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="br.com.ifpe.jpql.querySelect.JpqlSelectTest" time="11.919" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
@@ -62,7 +62,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="br.com.ifpe.jpql.querySelect.JpqlSelectTest" name="quantidadeFardamentoEntregueESituacaoPorId" time="0.063"/>
+  <testcase classname="br.com.ifpe.jpql.querySelect.JpqlSelectTest" name="quantidadeFardamentoEntregueESituacaoPorId" time="0.015"/>
   <testcase classname="br.com.ifpe.jpql.querySelect.JpqlSelectTest" name="bolsaDeAlunoPorMatricula" time="0"/>
+  <testcase classname="br.com.ifpe.jpql.querySelect.JpqlSelectTest" name="situacaoPorDescricao" time="0"/>
   <testcase classname="br.com.ifpe.jpql.querySelect.JpqlSelectTest" name="livrosTituloComVolume" time="0"/>
 </testsuite>

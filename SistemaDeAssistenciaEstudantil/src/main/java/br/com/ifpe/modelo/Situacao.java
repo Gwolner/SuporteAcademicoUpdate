@@ -24,10 +24,10 @@ import org.hibernate.validator.constraints.NotBlank;
 @Access(AccessType.FIELD)
 @NamedQueries(
         {
-        @NamedQuery(
-        name = Situacao.SITUACAO_POR_DESCRICAO,
-        query = "SELECT s FROM Situacao s WHERE s.descricaoSituacao like :descricao"
-                )
+            @NamedQuery(
+                name = Situacao.SITUACAO_POR_DESCRICAO,
+                query = "SELECT s FROM Situacao s WHERE s.descricaoSituacao like :descricao"
+            )
         }
 )
 public class Situacao implements Serializable {

@@ -21,15 +21,15 @@ import org.hibernate.validator.constraints.NotBlank;
 )
 @NamedQueries(
         {
-        @NamedQuery(
-        name = Professor.PROFESSOR_POR_NOME,
-        query = "SELECT p FROM Professor p WHERE p.nomeUsuario like :nome"
-                )
+            @NamedQuery(
+                name = Professor.RAMAL_POR_DEPARTAMENTO,
+                query = "SELECT p.ramal FROM Professor p WHERE p.departamento like :dept"
+            )
         }
 )
 public class Professor extends Usuario implements Serializable{
     
-    public static final String PROFESSOR_POR_NOME= "Professor_Por_Nome";
+    public static final String RAMAL_POR_DEPARTAMENTO= "Ramal_Por_Departamento";
     
     @Column(name="siape")
     private int siape;

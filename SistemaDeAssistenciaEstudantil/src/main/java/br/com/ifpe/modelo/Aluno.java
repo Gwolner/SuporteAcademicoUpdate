@@ -33,14 +33,14 @@ import org.hibernate.validator.constraints.NotBlank;
 @NamedQueries(
         {
         @NamedQuery(
-        name = Aluno.ALUNO_POR_NOME,
-        query = "SELECT a FROM Aluno a WHERE a.nomeUsuario like :nome"
+        name = Aluno.EMAIL_POR_MATRICULA,
+        query = "SELECT a.email FROM Aluno a WHERE a.matricula like :mat"
                 )
         }
 )
 public class Aluno extends Usuario implements Serializable{
     
-    public static final String ALUNO_POR_NOME= "Aluno_Por_Nome";
+    public static final String EMAIL_POR_MATRICULA = "Email_Por_Matricula";
     
     public Aluno() {
         this.fardamentos = new ArrayList<>();

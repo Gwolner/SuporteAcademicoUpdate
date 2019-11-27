@@ -1,7 +1,7 @@
 package br.com.ifpe.jpql.querySelect;
 
-import br.com.ifpe.modelo.Emprestimo;
 import br.com.ifpe.crud.GenericTest;
+import br.com.ifpe.modelo.Emprestimo;
 import java.util.List;
 import javax.persistence.TypedQuery;
 import static org.junit.Assert.assertEquals;
@@ -10,6 +10,35 @@ import org.junit.Test;
 
 
 public class EmprestimoSelectTest extends GenericTest{
+    
+    /*############################ NAMEDQUERY ############################*/
+    
+    //Uso do NAMEDQUERY Emprestimo.STATUS_POR_ID
+    @Test
+    public void quantidadeEntreguePorId() {
+        logger.info("Executando quantidadeEntreguePorId()");
+        TypedQuery<Emprestimo> query = em.createNamedQuery(
+                Emprestimo.STATUS_POR_ID, Emprestimo.class
+        );
+        query.setParameter(1, 1);
+        List<Emprestimo> emprestimo = query.getResultList();
+
+        assertEquals("Atrasado", emprestimo.get(0).getStatus());      
+    }
+    
+    //Uso do NAMEDQUERY Emprestimo.STATUS_DOS_EMPRESTIMOS
+    @Test
+    public void situacaoPorDescricao() {
+        logger.info("Executando situacaoPorDescricao()");
+        TypedQuery<Emprestimo> query = em.createNamedQuery(
+                Emprestimo.STATUS_DOS_EMPRESTIMOS, Emprestimo.class
+        );
+        List<Emprestimo> emprestimo = query.getResultList();
+
+        assertEquals(20, emprestimo.size());        
+    }
+
+    /*########################### CREATEQUERY ############################*/
     
     //Uso do LIKE
     @Test

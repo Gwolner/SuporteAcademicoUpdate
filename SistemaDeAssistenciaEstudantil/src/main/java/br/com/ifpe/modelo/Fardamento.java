@@ -12,6 +12,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -20,8 +22,23 @@ import org.hibernate.validator.constraints.NotBlank;
 
 @Entity
 @Table(name = "TB_FARDAMENTO")
+@NamedQueries(
+    {
+        @NamedQuery(
+            name = Fardamento.QUANTIDADE_ENTREGUE_POR_ID,
+            query = "SELECT f.quantidadeEntregue FROM Fardamento f WHERE f.idFardamento = ?1"
+        ),
+        @NamedQuery(
+            name = Fardamento.FARDAMENTOS,
+            query = "SELECT f.idFardamento FROM Fardamento f ORDER BY f.idFardamento"
+        )
+    }
+)
 @Access(AccessType.FIELD)
 public class Fardamento implements Serializable {
+    
+    public static final String QUANTIDADE_ENTREGUE_POR_ID = "Quantidade_Entregue_Por_Id";
+    public static final String FARDAMENTOS = "Fardamentos";    
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

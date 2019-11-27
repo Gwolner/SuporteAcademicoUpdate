@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="1" name="br.com.ifpe.jpql.querySelect.TamanhoSelectTest" time="16.475" errors="1" skipped="0">
+<testsuite tests="2" failures="0" name="br.com.ifpe.jpql.querySelect.TamanhoSelectTest" time="12.772" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
@@ -14,7 +14,7 @@
     <property name="user.country" value="BR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="test" value="br.com.ifpe.jpql.querySelect.TamanhoSelectTest#exibirTamanhos"/>
+    <property name="test" value="br.com.ifpe.jpql.querySelect.**.*Test"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="C:\Users\wolner\Desktop\meu Github\SistemaDeAssistenciaEstudantil"/>
     <property name="java.runtime.version" value="1.8.0_201-b09"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=br.com.ifpe.jpql.querySelect.TamanhoSelectTest#exibirTamanhos -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 surefire:test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=br.com.ifpe.jpql.querySelect.**.*Test -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 surefire:test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="pt"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -62,215 +62,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="br.com.ifpe.jpql.querySelect.TamanhoSelectTest" name="exibirTamanhos" time="0.109">
-    <error message="NamedQuery of name: SELECT t FROM Tamanho t ORDER BY t.descricaoTamanho not found." type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: NamedQuery of name: SELECT t FROM Tamanho t ORDER BY t.descricaoTamanho not found.
-	at org.eclipse.persistence.internal.jpa.QueryImpl.getDatabaseQueryInternal(QueryImpl.java:351)
-	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createNamedQuery(EntityManagerImpl.java:1124)
-	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createNamedQuery(EntityManagerImpl.java:1144)
-	at br.com.ifpe.jpql.querySelect.TamanhoSelectTest.exibirTamanhos(TamanhoSelectTest.java:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:45)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-</error>
-    <system-out>[EL Config]: metadata: 2019-11-27 00:51:22.756--ServerSession(1282811396)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field volume] is being defaulted to: class br.com.ifpe.modelo.Volume.
-[EL Config]: metadata: 2019-11-27 00:51:22.787--ServerSession(1282811396)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field emprestimos] is being defaulted to: class br.com.ifpe.modelo.Emprestimo.
-[EL Config]: metadata: 2019-11-27 00:51:22.787--ServerSession(1282811396)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field emprestimos] is being defaulted to: class br.com.ifpe.modelo.Emprestimo.
-[EL Config]: metadata: 2019-11-27 00:51:22.787--ServerSession(1282811396)--Thread(Thread[main,5,main])--The access type for the persistent class [class br.com.ifpe.modelo.Aluno] is set to [FIELD].
-[EL Config]: metadata: 2019-11-27 00:51:22.787--ServerSession(1282811396)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field fardamentos] is being defaulted to: class br.com.ifpe.modelo.Fardamento.
-[EL Config]: metadata: 2019-11-27 00:51:22.787--ServerSession(1282811396)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field bolsas] is being defaulted to: class br.com.ifpe.modelo.Bolsa.
-[EL Config]: metadata: 2019-11-27 00:51:22.787--ServerSession(1282811396)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field alunos] is being defaulted to: class br.com.ifpe.modelo.Aluno.
-[EL Config]: metadata: 2019-11-27 00:51:22.787--ServerSession(1282811396)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field aluno] is being defaulted to: class br.com.ifpe.modelo.Aluno.
-[EL Config]: metadata: 2019-11-27 00:51:22.787--ServerSession(1282811396)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field situacao] is being defaulted to: class br.com.ifpe.modelo.Situacao.
-[EL Config]: metadata: 2019-11-27 00:51:22.787--ServerSession(1282811396)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field tamanho] is being defaulted to: class br.com.ifpe.modelo.Tamanho.
-[EL Config]: metadata: 2019-11-27 00:51:22.787--ServerSession(1282811396)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field livro] is being defaulted to: class br.com.ifpe.modelo.Livro.
-[EL Config]: metadata: 2019-11-27 00:51:22.803--ServerSession(1282811396)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field usuario] is being defaulted to: class br.com.ifpe.modelo.Usuario.
-[EL Config]: metadata: 2019-11-27 00:51:22.803--ServerSession(1282811396)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field livros] is being defaulted to: class br.com.ifpe.modelo.Livro.
-[EL Config]: metadata: 2019-11-27 00:51:22.803--ServerSession(1282811396)--Thread(Thread[main,5,main])--The access type for the persistent class [class br.com.ifpe.modelo.Professor] is set to [FIELD].
-[EL Config]: metadata: 2019-11-27 00:51:22.803--ServerSession(1282811396)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field fardamentos] is being defaulted to: class br.com.ifpe.modelo.Fardamento.
-[EL Config]: metadata: 2019-11-27 00:51:22.803--ServerSession(1282811396)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field fardamentos] is being defaulted to: class br.com.ifpe.modelo.Fardamento.
-[EL Config]: metadata: 2019-11-27 00:51:22.803--ServerSession(1282811396)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Livro] is being defaulted to: Livro.
-[EL Config]: metadata: 2019-11-27 00:51:22.834--ServerSession(1282811396)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Aluno] is being defaulted to: Aluno.
-[EL Config]: metadata: 2019-11-27 00:51:22.834--ServerSession(1282811396)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Usuario] is being defaulted to: Usuario.
-[EL Config]: metadata: 2019-11-27 00:51:22.834--ServerSession(1282811396)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Bolsa] is being defaulted to: Bolsa.
-[EL Config]: metadata: 2019-11-27 00:51:22.834--ServerSession(1282811396)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Fardamento] is being defaulted to: Fardamento.
-[EL Config]: metadata: 2019-11-27 00:51:22.834--ServerSession(1282811396)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Emprestimo] is being defaulted to: Emprestimo.
-[EL Config]: metadata: 2019-11-27 00:51:22.834--ServerSession(1282811396)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Volume] is being defaulted to: Volume.
-[EL Config]: metadata: 2019-11-27 00:51:22.834--ServerSession(1282811396)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Professor] is being defaulted to: Professor.
-[EL Config]: metadata: 2019-11-27 00:51:22.834--ServerSession(1282811396)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Tamanho] is being defaulted to: Tamanho.
-[EL Config]: metadata: 2019-11-27 00:51:22.834--ServerSession(1282811396)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Situacao] is being defaulted to: Situacao.
-[EL Info]: 2019-11-27 00:51:24.021--ServerSession(1282811396)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd
-[EL Config]: connection: 2019-11-27 00:51:24.021--ServerSession(1282811396)--Connection(1058876963)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
-	platform=&gt;MySQLPlatform
-	user name=&gt; &quot;root&quot;
-	datasource URL=&gt; &quot;jdbc:mysql://localhost:3306/bd_sae&quot;
-))
-[EL Config]: connection: 2019-11-27 00:51:24.506--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--Connected: jdbc:mysql://localhost:3306/bd_sae
-	User: root@localhost
-	Database: MySQL  Version: 5.5.62-log
-	Driver: MySQL Connector Java  Version: mysql-connector-java-5.1.34 ( Revision: jess.balint@oracle.com-20141014163213-wqbwpf1ok2kvo1om )
-[EL Warning]: metadata: 2019-11-27 00:51:24.521--ServerSession(1282811396)--Thread(Thread[main,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [livro] for the entity class [class br.com.ifpe.modelo.Emprestimo] since weaving was not enabled or did not occur.
-[EL Warning]: metadata: 2019-11-27 00:51:24.521--ServerSession(1282811396)--Thread(Thread[main,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [usuario] for the entity class [class br.com.ifpe.modelo.Emprestimo] since weaving was not enabled or did not occur.
-[EL Warning]: metadata: 2019-11-27 00:51:24.521--ServerSession(1282811396)--Thread(Thread[main,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [aluno] for the entity class [class br.com.ifpe.modelo.Fardamento] since weaving was not enabled or did not occur.
-[EL Warning]: metadata: 2019-11-27 00:51:24.521--ServerSession(1282811396)--Thread(Thread[main,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [situacao] for the entity class [class br.com.ifpe.modelo.Fardamento] since weaving was not enabled or did not occur.
-[EL Warning]: metadata: 2019-11-27 00:51:24.521--ServerSession(1282811396)--Thread(Thread[main,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [tamanho] for the entity class [class br.com.ifpe.modelo.Fardamento] since weaving was not enabled or did not occur.
-[EL Warning]: metadata: 2019-11-27 00:51:24.521--ServerSession(1282811396)--Thread(Thread[main,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [volume] for the entity class [class br.com.ifpe.modelo.Livro] since weaving was not enabled or did not occur.
-[EL Info]: connection: 2019-11-27 00:51:24.693--ServerSession(1282811396)--Thread(Thread[main,5,main])--file:/C:/Users/wolner/Desktop/meu Github/SistemaDeAssistenciaEstudantil/target/classes/_tarefas login successful
-[EL Fine]: sql: 2019-11-27 00:51:24.709--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_ALUNO DROP FOREIGN KEY FK_TB_ALUNO_id_aluno
-[EL Fine]: sql: 2019-11-27 00:51:25.053--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_FARDAMENTO DROP FOREIGN KEY FK_TB_FARDAMENTO_id_aluno
-[EL Fine]: sql: 2019-11-27 00:51:25.381--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_FARDAMENTO DROP FOREIGN KEY FK_TB_FARDAMENTO_id_situacao
-[EL Fine]: sql: 2019-11-27 00:51:25.787--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_FARDAMENTO DROP FOREIGN KEY FK_TB_FARDAMENTO_id_tamanho
-[EL Fine]: sql: 2019-11-27 00:51:26.131--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_LIVRO DROP FOREIGN KEY FK_TB_LIVRO_id_volume
-[EL Fine]: sql: 2019-11-27 00:51:26.412--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_EMPRESTIMO DROP FOREIGN KEY FK_TB_EMPRESTIMO_id_livro
-[EL Fine]: sql: 2019-11-27 00:51:26.755--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_EMPRESTIMO DROP FOREIGN KEY FK_TB_EMPRESTIMO_id_usuario
-[EL Fine]: sql: 2019-11-27 00:51:27.068--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_PROFESSOR DROP FOREIGN KEY FK_TB_PROFESSOR_id_professor
-[EL Fine]: sql: 2019-11-27 00:51:27.349--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_ALUNO_x_TB_BOLSA DROP FOREIGN KEY FK_TB_ALUNO_x_TB_BOLSA_id_aluno
-[EL Fine]: sql: 2019-11-27 00:51:27.74--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_ALUNO_x_TB_BOLSA DROP FOREIGN KEY FK_TB_ALUNO_x_TB_BOLSA_id_bolsa
-[EL Fine]: sql: 2019-11-27 00:51:28.161--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--DROP TABLE TB_USUARIO
-[EL Fine]: sql: 2019-11-27 00:51:28.208--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--DROP TABLE TB_ALUNO
-[EL Fine]: sql: 2019-11-27 00:51:28.255--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--DROP TABLE TB_TAMANHO
-[EL Fine]: sql: 2019-11-27 00:51:28.317--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--DROP TABLE TB_FARDAMENTO
-[EL Fine]: sql: 2019-11-27 00:51:28.349--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--DROP TABLE TB_LIVRO
-[EL Fine]: sql: 2019-11-27 00:51:28.395--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--DROP TABLE TB_SITUACAO
-[EL Fine]: sql: 2019-11-27 00:51:28.443--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--DROP TABLE TB_EMPRESTIMO
-[EL Fine]: sql: 2019-11-27 00:51:28.489--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--DROP TABLE TB_VOLUME
-[EL Fine]: sql: 2019-11-27 00:51:28.536--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--DROP TABLE TB_PROFESSOR
-[EL Fine]: sql: 2019-11-27 00:51:28.583--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--DROP TABLE TB_BOLSA
-[EL Fine]: sql: 2019-11-27 00:51:28.63--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--DROP TABLE TB_ALUNO_x_TB_BOLSA
-[EL Fine]: sql: 2019-11-27 00:51:28.692--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--CREATE TABLE TB_USUARIO (id_usuario BIGINT AUTO_INCREMENT NOT NULL, disc_usuario VARCHAR(1), cpf VARCHAR(255), data_nascimento DATE, nome_usuario VARCHAR(255), rg INTEGER, PRIMARY KEY (id_usuario))
-[EL Fine]: sql: 2019-11-27 00:51:28.786--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--CREATE TABLE TB_ALUNO (id_aluno BIGINT NOT NULL, contato_responsavel BIGINT, curso VARCHAR(255), email VARCHAR(255), matricula VARCHAR(255), responsavel VARCHAR(255), turno VARCHAR(255), PRIMARY KEY (id_aluno))
-[EL Fine]: sql: 2019-11-27 00:51:28.88--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--CREATE TABLE TB_TAMANHO (id_tamanho BIGINT AUTO_INCREMENT NOT NULL, descricao_tamanho VARCHAR(255), PRIMARY KEY (id_tamanho))
-[EL Fine]: sql: 2019-11-27 00:51:28.958--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--CREATE TABLE TB_FARDAMENTO (id_fardamento BIGINT AUTO_INCREMENT NOT NULL, quantidade_entregue INTEGER, id_aluno BIGINT, id_situacao BIGINT, id_tamanho BIGINT, PRIMARY KEY (id_fardamento))
-[EL Fine]: sql: 2019-11-27 00:51:29.036--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--CREATE TABLE TB_LIVRO (id_livro BIGINT AUTO_INCREMENT NOT NULL, autor VARCHAR(255), isbn BIGINT, materia VARCHAR(255), quantidade INTEGER, titulo VARCHAR(255), id_volume BIGINT, PRIMARY KEY (id_livro))
-[EL Fine]: sql: 2019-11-27 00:51:29.114--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--CREATE TABLE TB_SITUACAO (id_situacao BIGINT AUTO_INCREMENT NOT NULL, descricao_situacao VARCHAR(255), PRIMARY KEY (id_situacao))
-[EL Fine]: sql: 2019-11-27 00:51:29.208--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--CREATE TABLE TB_EMPRESTIMO (id_emprestimo BIGINT AUTO_INCREMENT NOT NULL, data_devolucao DATE, data_entrega DATE, status VARCHAR(255), id_livro BIGINT, id_usuario BIGINT, PRIMARY KEY (id_emprestimo))
-[EL Fine]: sql: 2019-11-27 00:51:29.286--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--CREATE TABLE TB_VOLUME (id_volume BIGINT AUTO_INCREMENT NOT NULL, descricao_volume VARCHAR(255), PRIMARY KEY (id_volume))
-[EL Fine]: sql: 2019-11-27 00:51:29.364--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--CREATE TABLE TB_PROFESSOR (id_professor BIGINT NOT NULL, departamento VARCHAR(255), ramal BIGINT, siape INTEGER, PRIMARY KEY (id_professor))
-[EL Fine]: sql: 2019-11-27 00:51:29.458--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--CREATE TABLE TB_BOLSA (id_bolsa BIGINT AUTO_INCREMENT NOT NULL, nome_bolsa VARCHAR(255), tipo VARCHAR(255), valor DOUBLE, PRIMARY KEY (id_bolsa))
-[EL Fine]: sql: 2019-11-27 00:51:29.551--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--CREATE TABLE TB_ALUNO_x_TB_BOLSA (id_aluno BIGINT NOT NULL, id_bolsa BIGINT NOT NULL, PRIMARY KEY (id_aluno, id_bolsa))
-[EL Fine]: sql: 2019-11-27 00:51:29.63--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_ALUNO ADD CONSTRAINT FK_TB_ALUNO_id_aluno FOREIGN KEY (id_aluno) REFERENCES TB_USUARIO (id_usuario)
-[EL Fine]: sql: 2019-11-27 00:51:29.864--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_FARDAMENTO ADD CONSTRAINT FK_TB_FARDAMENTO_id_aluno FOREIGN KEY (id_aluno) REFERENCES TB_USUARIO (id_usuario)
-[EL Fine]: sql: 2019-11-27 00:51:30.145--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_FARDAMENTO ADD CONSTRAINT FK_TB_FARDAMENTO_id_situacao FOREIGN KEY (id_situacao) REFERENCES TB_SITUACAO (id_situacao)
-[EL Fine]: sql: 2019-11-27 00:51:30.388--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_FARDAMENTO ADD CONSTRAINT FK_TB_FARDAMENTO_id_tamanho FOREIGN KEY (id_tamanho) REFERENCES TB_TAMANHO (id_tamanho)
-[EL Fine]: sql: 2019-11-27 00:51:30.638--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_LIVRO ADD CONSTRAINT FK_TB_LIVRO_id_volume FOREIGN KEY (id_volume) REFERENCES TB_VOLUME (id_volume)
-[EL Fine]: sql: 2019-11-27 00:51:30.873--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_EMPRESTIMO ADD CONSTRAINT FK_TB_EMPRESTIMO_id_livro FOREIGN KEY (id_livro) REFERENCES TB_LIVRO (id_livro)
-[EL Fine]: sql: 2019-11-27 00:51:31.123--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_EMPRESTIMO ADD CONSTRAINT FK_TB_EMPRESTIMO_id_usuario FOREIGN KEY (id_usuario) REFERENCES TB_USUARIO (id_usuario)
-[EL Fine]: sql: 2019-11-27 00:51:31.342--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_PROFESSOR ADD CONSTRAINT FK_TB_PROFESSOR_id_professor FOREIGN KEY (id_professor) REFERENCES TB_USUARIO (id_usuario)
-[EL Fine]: sql: 2019-11-27 00:51:31.607--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_ALUNO_x_TB_BOLSA ADD CONSTRAINT FK_TB_ALUNO_x_TB_BOLSA_id_aluno FOREIGN KEY (id_aluno) REFERENCES TB_USUARIO (id_usuario)
-[EL Fine]: sql: 2019-11-27 00:51:31.826--ServerSession(1282811396)--Connection(1168924571)--Thread(Thread[main,5,main])--ALTER TABLE TB_ALUNO_x_TB_BOLSA ADD CONSTRAINT FK_TB_ALUNO_x_TB_BOLSA_id_bolsa FOREIGN KEY (id_bolsa) REFERENCES TB_BOLSA (id_bolsa)
-</system-out>
-    <system-err>nov 27, 2019 12:51:23 AM org.hibernate.validator.internal.util.Version &lt;clinit&gt;
-INFO: HV000001: Hibernate Validator 5.1.3.Final
-SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-nov 27, 2019 12:51:38 AM br.com.ifpe.jpql.querySelect.TamanhoSelectTest exibirTamanhos
-INFORMAÇÕES: Executando tamanhosIniciandoComP()
-nov 27, 2019 12:51:38 AM br.com.ifpe.crud.GenericTest commitTransaction
-GRAVE: Transaction rolled back because transaction was set to RollbackOnly.
-javax.persistence.RollbackException: Transaction rolled back because transaction was set to RollbackOnly.
-	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:141)
-	at br.com.ifpe.crud.GenericTest.commitTransaction(GenericTest.java:69)
-	at br.com.ifpe.crud.GenericTest.tearDown(GenericTest.java:58)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:45)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-
-</system-err>
-  </testcase>
-  <testcase classname="br.com.ifpe.jpql.querySelect.TamanhoSelectTest" name="exibirTamanhos" time="0.109">
-    <failure message="Transaction rolled back because transaction was set to RollbackOnly." type="java.lang.AssertionError">java.lang.AssertionError: Transaction rolled back because transaction was set to RollbackOnly.
-	at org.junit.Assert.fail(Assert.java:88)
-	at br.com.ifpe.crud.GenericTest.commitTransaction(GenericTest.java:72)
-	at br.com.ifpe.crud.GenericTest.tearDown(GenericTest.java:58)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:45)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-</failure>
-  </testcase>
+  <testcase classname="br.com.ifpe.jpql.querySelect.TamanhoSelectTest" name="tamanhosIniciandoComP" time="0.015"/>
+  <testcase classname="br.com.ifpe.jpql.querySelect.TamanhoSelectTest" name="tamanhosDistintos" time="0.016"/>
 </testsuite>

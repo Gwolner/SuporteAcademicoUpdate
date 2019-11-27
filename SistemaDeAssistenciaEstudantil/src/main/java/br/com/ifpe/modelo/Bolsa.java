@@ -23,15 +23,16 @@ import org.hibernate.validator.constraints.NotBlank;
 @Access(AccessType.FIELD)
 @NamedQueries(
         {
-        @NamedQuery(
-        name = Bolsa.BOLSA_POR_NOME,
-        query = "SELECT b FROM Bolsa b WHERE b.nomeBolsa like :nomeBolsa"
-                )
+            @NamedQuery(
+                name = Bolsa.CONTAR_BOLSAS_POR_VALOR,
+                query = "SELECT COUNT(b.nomeBolsa) FROM Bolsa b WHERE b.valor like :valor"
+            )
         }
 )
 public class Bolsa implements Serializable {
     
-        public static final String BOLSA_POR_NOME= "BolsaPorNome";
+        public static final String CONTAR_BOLSAS_POR_VALOR 
+                = "Contar_Bolsa_Por_Valor";
 
     
     public Bolsa() {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="br.com.ifpe.crud.TamanhoCrudTest" time="13.188" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="br.com.ifpe.crud.TamanhoCrudTest" time="12.497" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
@@ -62,8 +62,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="br.com.ifpe.crud.TamanhoCrudTest" name="persistirTamanho" time="0.047"/>
-  <testcase classname="br.com.ifpe.crud.TamanhoCrudTest" name="removerTamanho" time="0.047"/>
-  <testcase classname="br.com.ifpe.crud.TamanhoCrudTest" name="atualizarTamanho" time="0.062"/>
-  <testcase classname="br.com.ifpe.crud.TamanhoCrudTest" name="atualizarTamanhoMerge" time="0.047"/>
+  <testcase classname="br.com.ifpe.crud.TamanhoCrudTest" name="persistirTamanho" time="0.063"/>
+  <testcase classname="br.com.ifpe.crud.TamanhoCrudTest" name="removerTamanho" time="0.062"/>
+  <testcase classname="br.com.ifpe.crud.TamanhoCrudTest" name="atualizarTamanho" time="0.063"/>
+  <testcase classname="br.com.ifpe.crud.TamanhoCrudTest" name="atualizarTamanhoMerge" time="0.078"/>
 </testsuite>
