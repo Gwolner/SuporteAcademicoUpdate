@@ -24,13 +24,20 @@ import org.hibernate.validator.constraints.NotBlank;
 @NamedQueries(
         {
             @NamedQuery(
-                    name = "Tamanho.PorLetra",
+                    name = Tamanho.POR_LETRA,
                     query = "SELECT t FROM Tamanho t WHERE t.descricaoTamanho LIKE :param ORDER BY t.descricaoTamanho"
+            ),
+            @NamedQuery(
+                name = Tamanho.TAMANHOS,
+                query = "SELECT t FROM Tamanho t ORDER BY t.descricaoTamanho"
             )
         }
 )
 @Access(AccessType.FIELD)
 public class Tamanho implements Serializable {
+    
+    public static final String POR_LETRA = "PorLetra";
+    public static final String TAMANHOS = "Tamanhos";
     
     public Tamanho() {
         this.fardamentos = new ArrayList<>();

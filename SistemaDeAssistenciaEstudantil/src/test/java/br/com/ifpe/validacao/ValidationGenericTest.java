@@ -10,7 +10,7 @@ import br.com.ifpe.modelo.Professor;
 import br.com.ifpe.modelo.Situacao;
 import br.com.ifpe.modelo.Tamanho;
 import br.com.ifpe.modelo.Volume;
-import br.com.ifpe.teste.DbUnitUtil;
+import br.com.ifpe.crud.DbUnitUtil;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.logging.Level;

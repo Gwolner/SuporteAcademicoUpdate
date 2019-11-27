@@ -2,7 +2,7 @@ package br.com.ifpe.jpql.queryUpdateDelete;
 
 import br.com.ifpe.modelo.Bolsa;
 import br.com.ifpe.modelo.Tamanho;
-import br.com.ifpe.teste.GenericTest;
+import br.com.ifpe.crud.GenericTest;
 import javax.persistence.CacheRetrieveMode;
 import javax.persistence.NoResultException;
 import javax.persistence.Query;

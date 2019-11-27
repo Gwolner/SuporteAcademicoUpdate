@@ -5,7 +5,7 @@
  */
 package br.com.ifpe.jpql.queryUpdateDelete;
 
-import br.com.ifpe.teste.GenericTest;
+import br.com.ifpe.crud.GenericTest;
 
 /**
  *

@@ -1,0 +1,8 @@
+#surefire
+#Wed Nov 27 00:39:18 GFT 2019
+maven.ext.class.path=C\:\\Program Files\\NetBeans 8.2\\java\\maven-nblib\\netbeans-eventspy.jar
+user.dir=C\:\\Users\\wolner\\Desktop\\meu Github\\SistemaDeAssistenciaEstudantil
+file.encoding=UTF-8
+localRepository=C\:\\Users\\wolner\\.m2\\repository
+basedir=C\:\\Users\\wolner\\Desktop\\meu Github\\SistemaDeAssistenciaEstudantil
+test=br.com.ifpe.jpql.querySelect.TamanhoSelectTest\#tamanhosIniciandoComP
