@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="br.com.ifpe.crud.SituacaoCrudTest" time="11.435" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="br.com.ifpe.crud.SituacaoCrudTest" time="6.311" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
@@ -62,8 +62,275 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="br.com.ifpe.crud.SituacaoCrudTest" name="persistirSituacao" time="0.047"/>
-  <testcase classname="br.com.ifpe.crud.SituacaoCrudTest" name="atualizarSituacao" time="0.047"/>
-  <testcase classname="br.com.ifpe.crud.SituacaoCrudTest" name="removerSituacao" time="0.063"/>
-  <testcase classname="br.com.ifpe.crud.SituacaoCrudTest" name="atualizarSituacaoMerge" time="0.046"/>
+  <testcase classname="br.com.ifpe.crud.SituacaoCrudTest" name="br.com.ifpe.crud.SituacaoCrudTest" time="19.284">
+    <error message="TB_ALUNO_x_TB_BOLSA" type="java.lang.RuntimeException">java.lang.RuntimeException: TB_ALUNO_x_TB_BOLSA
+	at br.com.ifpe.crud.DbUnitUtil.inserirDados(DbUnitUtil.java:45)
+	at br.com.ifpe.crud.GenericTest.setUpClass(GenericTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: org.dbunit.dataset.NoSuchTableException: TB_ALUNO_x_TB_BOLSA
+	at org.dbunit.database.DatabaseDataSet.getTableMetaData(DatabaseDataSet.java:305)
+	at org.dbunit.operation.DeleteAllOperation.execute(DeleteAllOperation.java:109)
+	at org.dbunit.operation.CompositeOperation.execute(CompositeOperation.java:79)
+	at br.com.ifpe.crud.DbUnitUtil.inserirDados(DbUnitUtil.java:41)
+	... 23 more
+</error>
+    <system-out>[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field volume] is being defaulted to: class br.com.ifpe.modelo.Volume.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field emprestimos] is being defaulted to: class br.com.ifpe.modelo.Emprestimo.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field emprestimos] is being defaulted to: class br.com.ifpe.modelo.Emprestimo.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The access type for the persistent class [class br.com.ifpe.modelo.Aluno] is set to [FIELD].
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field fardamentos] is being defaulted to: class br.com.ifpe.modelo.Fardamento.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field bolsas] is being defaulted to: class br.com.ifpe.modelo.Bolsa.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field alunos] is being defaulted to: class br.com.ifpe.modelo.Aluno.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field aluno] is being defaulted to: class br.com.ifpe.modelo.Aluno.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field situacao] is being defaulted to: class br.com.ifpe.modelo.Situacao.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field tamanho] is being defaulted to: class br.com.ifpe.modelo.Tamanho.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field livro] is being defaulted to: class br.com.ifpe.modelo.Livro.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field usuario] is being defaulted to: class br.com.ifpe.modelo.Usuario.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field livros] is being defaulted to: class br.com.ifpe.modelo.Livro.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The access type for the persistent class [class br.com.ifpe.modelo.Professor] is set to [FIELD].
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field fardamentos] is being defaulted to: class br.com.ifpe.modelo.Fardamento.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field fardamentos] is being defaulted to: class br.com.ifpe.modelo.Fardamento.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Livro] is being defaulted to: Livro.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Aluno] is being defaulted to: Aluno.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Usuario] is being defaulted to: Usuario.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Bolsa] is being defaulted to: Bolsa.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Fardamento] is being defaulted to: Fardamento.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Emprestimo] is being defaulted to: Emprestimo.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Volume] is being defaulted to: Volume.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Professor] is being defaulted to: Professor.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Tamanho] is being defaulted to: Tamanho.
+[EL Config]: metadata: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--The alias name for the entity class [class br.com.ifpe.modelo.Situacao] is being defaulted to: Situacao.
+[EL Info]: 2019-11-27 18:38:48.167--ServerSession(603401608)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd
+[EL Config]: connection: 2019-11-27 18:38:48.167--ServerSession(603401608)--Connection(1202547191)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=&gt;MySQLPlatform
+	user name=&gt; &quot;root&quot;
+	datasource URL=&gt; &quot;jdbc:mysql://localhost:3306/bd_sae&quot;
+))
+[EL Config]: connection: 2019-11-27 18:38:48.182--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--Connected: jdbc:mysql://localhost:3306/bd_sae
+	User: root@localhost
+	Database: MySQL  Version: 5.5.62-log
+	Driver: MySQL Connector Java  Version: mysql-connector-java-5.1.34 ( Revision: jess.balint@oracle.com-20141014163213-wqbwpf1ok2kvo1om )
+[EL Warning]: metadata: 2019-11-27 18:38:48.182--ServerSession(603401608)--Thread(Thread[main,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [volume] for the entity class [class br.com.ifpe.modelo.Livro] since weaving was not enabled or did not occur.
+[EL Warning]: metadata: 2019-11-27 18:38:48.182--ServerSession(603401608)--Thread(Thread[main,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [aluno] for the entity class [class br.com.ifpe.modelo.Fardamento] since weaving was not enabled or did not occur.
+[EL Warning]: metadata: 2019-11-27 18:38:48.182--ServerSession(603401608)--Thread(Thread[main,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [situacao] for the entity class [class br.com.ifpe.modelo.Fardamento] since weaving was not enabled or did not occur.
+[EL Warning]: metadata: 2019-11-27 18:38:48.182--ServerSession(603401608)--Thread(Thread[main,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [tamanho] for the entity class [class br.com.ifpe.modelo.Fardamento] since weaving was not enabled or did not occur.
+[EL Warning]: metadata: 2019-11-27 18:38:48.182--ServerSession(603401608)--Thread(Thread[main,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [livro] for the entity class [class br.com.ifpe.modelo.Emprestimo] since weaving was not enabled or did not occur.
+[EL Warning]: metadata: 2019-11-27 18:38:48.182--ServerSession(603401608)--Thread(Thread[main,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [usuario] for the entity class [class br.com.ifpe.modelo.Emprestimo] since weaving was not enabled or did not occur.
+[EL Info]: connection: 2019-11-27 18:38:48.182--ServerSession(603401608)--Thread(Thread[main,5,main])--file:/C:/Users/wolner/Desktop/meu Github/SistemaDeAssistenciaEstudantil/target/classes/_tarefas login successful
+[EL Fine]: sql: 2019-11-27 18:38:48.182--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_ALUNO DROP FOREIGN KEY FK_TB_ALUNO_id_aluno
+[EL Fine]: sql: 2019-11-27 18:38:48.182--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.182--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;bd_sae.tb_aluno&apos; doesn&apos;t exist
+Error Code: 1146
+Call: ALTER TABLE TB_ALUNO DROP FOREIGN KEY FK_TB_ALUNO_id_aluno
+Query: DataModifyQuery(sql=&quot;ALTER TABLE TB_ALUNO DROP FOREIGN KEY FK_TB_ALUNO_id_aluno&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.182--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_FARDAMENTO DROP FOREIGN KEY FK_TB_FARDAMENTO_id_aluno
+[EL Fine]: sql: 2019-11-27 18:38:48.182--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.182--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;bd_sae.tb_fardamento&apos; doesn&apos;t exist
+Error Code: 1146
+Call: ALTER TABLE TB_FARDAMENTO DROP FOREIGN KEY FK_TB_FARDAMENTO_id_aluno
+Query: DataModifyQuery(sql=&quot;ALTER TABLE TB_FARDAMENTO DROP FOREIGN KEY FK_TB_FARDAMENTO_id_aluno&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.182--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_FARDAMENTO DROP FOREIGN KEY FK_TB_FARDAMENTO_id_situacao
+[EL Fine]: sql: 2019-11-27 18:38:48.182--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.182--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;bd_sae.tb_fardamento&apos; doesn&apos;t exist
+Error Code: 1146
+Call: ALTER TABLE TB_FARDAMENTO DROP FOREIGN KEY FK_TB_FARDAMENTO_id_situacao
+Query: DataModifyQuery(sql=&quot;ALTER TABLE TB_FARDAMENTO DROP FOREIGN KEY FK_TB_FARDAMENTO_id_situacao&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.182--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_FARDAMENTO DROP FOREIGN KEY FK_TB_FARDAMENTO_id_tamanho
+[EL Fine]: sql: 2019-11-27 18:38:48.182--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.182--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;bd_sae.tb_fardamento&apos; doesn&apos;t exist
+Error Code: 1146
+Call: ALTER TABLE TB_FARDAMENTO DROP FOREIGN KEY FK_TB_FARDAMENTO_id_tamanho
+Query: DataModifyQuery(sql=&quot;ALTER TABLE TB_FARDAMENTO DROP FOREIGN KEY FK_TB_FARDAMENTO_id_tamanho&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.182--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_LIVRO DROP FOREIGN KEY FK_TB_LIVRO_id_volume
+[EL Fine]: sql: 2019-11-27 18:38:48.182--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.198--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;bd_sae.tb_livro&apos; doesn&apos;t exist
+Error Code: 1146
+Call: ALTER TABLE TB_LIVRO DROP FOREIGN KEY FK_TB_LIVRO_id_volume
+Query: DataModifyQuery(sql=&quot;ALTER TABLE TB_LIVRO DROP FOREIGN KEY FK_TB_LIVRO_id_volume&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.198--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_EMPRESTIMO DROP FOREIGN KEY FK_TB_EMPRESTIMO_id_livro
+[EL Fine]: sql: 2019-11-27 18:38:48.198--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.198--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;bd_sae.tb_emprestimo&apos; doesn&apos;t exist
+Error Code: 1146
+Call: ALTER TABLE TB_EMPRESTIMO DROP FOREIGN KEY FK_TB_EMPRESTIMO_id_livro
+Query: DataModifyQuery(sql=&quot;ALTER TABLE TB_EMPRESTIMO DROP FOREIGN KEY FK_TB_EMPRESTIMO_id_livro&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.198--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_EMPRESTIMO DROP FOREIGN KEY FK_TB_EMPRESTIMO_id_usuario
+[EL Fine]: sql: 2019-11-27 18:38:48.198--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.198--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;bd_sae.tb_emprestimo&apos; doesn&apos;t exist
+Error Code: 1146
+Call: ALTER TABLE TB_EMPRESTIMO DROP FOREIGN KEY FK_TB_EMPRESTIMO_id_usuario
+Query: DataModifyQuery(sql=&quot;ALTER TABLE TB_EMPRESTIMO DROP FOREIGN KEY FK_TB_EMPRESTIMO_id_usuario&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.198--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_PROFESSOR DROP FOREIGN KEY FK_TB_PROFESSOR_id_professor
+[EL Fine]: sql: 2019-11-27 18:38:48.589--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.589--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: Error on rename of &apos;.\bd_sae\tb_professor&apos; to &apos;.\bd_sae\#sql2-650-41a&apos; (errno: 152)
+Error Code: 1025
+Call: ALTER TABLE TB_PROFESSOR DROP FOREIGN KEY FK_TB_PROFESSOR_id_professor
+Query: DataModifyQuery(sql=&quot;ALTER TABLE TB_PROFESSOR DROP FOREIGN KEY FK_TB_PROFESSOR_id_professor&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.589--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_ALUNO_x_TB_BOLSA DROP FOREIGN KEY FK_TB_ALUNO_x_TB_BOLSA_id_aluno
+[EL Fine]: sql: 2019-11-27 18:38:48.807--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.807--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: Error on rename of &apos;.\bd_sae\tb_aluno_x_tb_bolsa&apos; to &apos;.\bd_sae\#sql2-650-41a&apos; (errno: 152)
+Error Code: 1025
+Call: ALTER TABLE TB_ALUNO_x_TB_BOLSA DROP FOREIGN KEY FK_TB_ALUNO_x_TB_BOLSA_id_aluno
+Query: DataModifyQuery(sql=&quot;ALTER TABLE TB_ALUNO_x_TB_BOLSA DROP FOREIGN KEY FK_TB_ALUNO_x_TB_BOLSA_id_aluno&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.807--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_ALUNO_x_TB_BOLSA DROP FOREIGN KEY FK_TB_ALUNO_x_TB_BOLSA_id_bolsa
+[EL Fine]: sql: 2019-11-27 18:38:48.87--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.87--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;bd_sae.tb_aluno_x_tb_bolsa&apos; doesn&apos;t exist
+Error Code: 1146
+Call: ALTER TABLE TB_ALUNO_x_TB_BOLSA DROP FOREIGN KEY FK_TB_ALUNO_x_TB_BOLSA_id_bolsa
+Query: DataModifyQuery(sql=&quot;ALTER TABLE TB_ALUNO_x_TB_BOLSA DROP FOREIGN KEY FK_TB_ALUNO_x_TB_BOLSA_id_bolsa&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.87--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_USUARIO
+[EL Fine]: sql: 2019-11-27 18:38:48.87--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.87--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown table &apos;tb_usuario&apos;
+Error Code: 1051
+Call: DROP TABLE TB_USUARIO
+Query: DataModifyQuery(sql=&quot;DROP TABLE TB_USUARIO&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.87--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_ALUNO
+[EL Fine]: sql: 2019-11-27 18:38:48.87--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.87--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown table &apos;tb_aluno&apos;
+Error Code: 1051
+Call: DROP TABLE TB_ALUNO
+Query: DataModifyQuery(sql=&quot;DROP TABLE TB_ALUNO&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.87--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_TAMANHO
+[EL Fine]: sql: 2019-11-27 18:38:48.87--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.87--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown table &apos;tb_tamanho&apos;
+Error Code: 1051
+Call: DROP TABLE TB_TAMANHO
+Query: DataModifyQuery(sql=&quot;DROP TABLE TB_TAMANHO&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.87--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_FARDAMENTO
+[EL Fine]: sql: 2019-11-27 18:38:48.87--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.885--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown table &apos;tb_fardamento&apos;
+Error Code: 1051
+Call: DROP TABLE TB_FARDAMENTO
+Query: DataModifyQuery(sql=&quot;DROP TABLE TB_FARDAMENTO&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.885--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_LIVRO
+[EL Fine]: sql: 2019-11-27 18:38:48.885--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.885--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown table &apos;tb_livro&apos;
+Error Code: 1051
+Call: DROP TABLE TB_LIVRO
+Query: DataModifyQuery(sql=&quot;DROP TABLE TB_LIVRO&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.885--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_SITUACAO
+[EL Fine]: sql: 2019-11-27 18:38:48.885--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.885--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown table &apos;tb_situacao&apos;
+Error Code: 1051
+Call: DROP TABLE TB_SITUACAO
+Query: DataModifyQuery(sql=&quot;DROP TABLE TB_SITUACAO&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.885--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_EMPRESTIMO
+[EL Fine]: sql: 2019-11-27 18:38:48.885--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.885--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown table &apos;tb_emprestimo&apos;
+Error Code: 1051
+Call: DROP TABLE TB_EMPRESTIMO
+Query: DataModifyQuery(sql=&quot;DROP TABLE TB_EMPRESTIMO&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.885--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_VOLUME
+[EL Fine]: sql: 2019-11-27 18:38:48.885--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.885--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown table &apos;tb_volume&apos;
+Error Code: 1051
+Call: DROP TABLE TB_VOLUME
+Query: DataModifyQuery(sql=&quot;DROP TABLE TB_VOLUME&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.885--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_PROFESSOR
+[EL Fine]: sql: 2019-11-27 18:38:48.901--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.901--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown table &apos;tb_professor&apos;
+Error Code: 1051
+Call: DROP TABLE TB_PROFESSOR
+Query: DataModifyQuery(sql=&quot;DROP TABLE TB_PROFESSOR&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.901--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_BOLSA
+[EL Fine]: sql: 2019-11-27 18:38:48.901--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.901--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown table &apos;tb_bolsa&apos;
+Error Code: 1051
+Call: DROP TABLE TB_BOLSA
+Query: DataModifyQuery(sql=&quot;DROP TABLE TB_BOLSA&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.901--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_ALUNO_x_TB_BOLSA
+[EL Fine]: sql: 2019-11-27 18:38:48.901--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:48.901--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown table &apos;tb_aluno_x_tb_bolsa&apos;
+Error Code: 1051
+Call: DROP TABLE TB_ALUNO_x_TB_BOLSA
+Query: DataModifyQuery(sql=&quot;DROP TABLE TB_ALUNO_x_TB_BOLSA&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:48.901--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_USUARIO
+[EL Fine]: sql: 2019-11-27 18:38:49.104--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_ALUNO
+[EL Fine]: sql: 2019-11-27 18:38:49.229--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_TAMANHO
+[EL Fine]: sql: 2019-11-27 18:38:49.323--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_FARDAMENTO
+[EL Fine]: sql: 2019-11-27 18:38:49.448--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_LIVRO
+[EL Fine]: sql: 2019-11-27 18:38:49.557--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_SITUACAO
+[EL Fine]: sql: 2019-11-27 18:38:49.667--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_EMPRESTIMO
+[EL Fine]: sql: 2019-11-27 18:38:49.807--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_VOLUME
+[EL Fine]: sql: 2019-11-27 18:38:49.916--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_PROFESSOR
+[EL Fine]: sql: 2019-11-27 18:38:50.042--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_BOLSA
+[EL Fine]: sql: 2019-11-27 18:38:50.167--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--DROP TABLE TB_ALUNO_x_TB_BOLSA
+[EL Fine]: sql: 2019-11-27 18:38:50.307--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--CREATE TABLE TB_USUARIO (id_usuario BIGINT AUTO_INCREMENT NOT NULL, disc_usuario VARCHAR(1), cpf VARCHAR(255), data_nascimento DATE, nome_usuario VARCHAR(255), rg INTEGER, PRIMARY KEY (id_usuario))
+[EL Fine]: sql: 2019-11-27 18:38:50.401--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--CREATE TABLE TB_ALUNO (id_aluno BIGINT NOT NULL, contato_responsavel BIGINT, curso VARCHAR(255), email VARCHAR(255), matricula VARCHAR(255), responsavel VARCHAR(255), turno VARCHAR(255), PRIMARY KEY (id_aluno))
+[EL Fine]: sql: 2019-11-27 18:38:50.494--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--CREATE TABLE TB_TAMANHO (id_tamanho BIGINT AUTO_INCREMENT NOT NULL, descricao_tamanho VARCHAR(255), PRIMARY KEY (id_tamanho))
+[EL Fine]: sql: 2019-11-27 18:38:50.604--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--CREATE TABLE TB_FARDAMENTO (id_fardamento BIGINT AUTO_INCREMENT NOT NULL, quantidade_entregue INTEGER, id_aluno BIGINT, id_situacao BIGINT, id_tamanho BIGINT, PRIMARY KEY (id_fardamento))
+[EL Fine]: sql: 2019-11-27 18:38:50.76--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--CREATE TABLE TB_LIVRO (id_livro BIGINT AUTO_INCREMENT NOT NULL, autor VARCHAR(255), isbn BIGINT, materia VARCHAR(255), quantidade INTEGER, titulo VARCHAR(255), id_volume BIGINT, PRIMARY KEY (id_livro))
+[EL Fine]: sql: 2019-11-27 18:38:50.885--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--CREATE TABLE TB_SITUACAO (id_situacao BIGINT AUTO_INCREMENT NOT NULL, descricao_situacao VARCHAR(255), PRIMARY KEY (id_situacao))
+[EL Fine]: sql: 2019-11-27 18:38:51.041--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--CREATE TABLE TB_EMPRESTIMO (id_emprestimo BIGINT AUTO_INCREMENT NOT NULL, data_devolucao DATE, data_entrega DATE, status VARCHAR(255), id_livro BIGINT, id_usuario BIGINT, PRIMARY KEY (id_emprestimo))
+[EL Fine]: sql: 2019-11-27 18:38:51.182--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--CREATE TABLE TB_VOLUME (id_volume BIGINT AUTO_INCREMENT NOT NULL, descricao_volume VARCHAR(255), PRIMARY KEY (id_volume))
+[EL Fine]: sql: 2019-11-27 18:38:51.307--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--CREATE TABLE TB_PROFESSOR (id_professor BIGINT NOT NULL, departamento VARCHAR(255), ramal BIGINT, siape INTEGER, PRIMARY KEY (id_professor))
+[EL Fine]: sql: 2019-11-27 18:38:51.432--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--CREATE TABLE TB_BOLSA (id_bolsa BIGINT AUTO_INCREMENT NOT NULL, nome_bolsa VARCHAR(255), tipo VARCHAR(255), valor DOUBLE, PRIMARY KEY (id_bolsa))
+[EL Fine]: sql: 2019-11-27 18:38:51.541--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--CREATE TABLE TB_ALUNO_x_TB_BOLSA (id_aluno BIGINT NOT NULL, id_bolsa BIGINT NOT NULL, PRIMARY KEY (id_aluno, id_bolsa))
+[EL Fine]: sql: 2019-11-27 18:38:51.713--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_ALUNO ADD CONSTRAINT FK_TB_ALUNO_id_aluno FOREIGN KEY (id_aluno) REFERENCES TB_USUARIO (id_usuario)
+[EL Fine]: sql: 2019-11-27 18:38:52.197--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_FARDAMENTO ADD CONSTRAINT FK_TB_FARDAMENTO_id_aluno FOREIGN KEY (id_aluno) REFERENCES TB_USUARIO (id_usuario)
+[EL Fine]: sql: 2019-11-27 18:38:52.681--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_FARDAMENTO ADD CONSTRAINT FK_TB_FARDAMENTO_id_situacao FOREIGN KEY (id_situacao) REFERENCES TB_SITUACAO (id_situacao)
+[EL Fine]: sql: 2019-11-27 18:38:53.056--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_FARDAMENTO ADD CONSTRAINT FK_TB_FARDAMENTO_id_tamanho FOREIGN KEY (id_tamanho) REFERENCES TB_TAMANHO (id_tamanho)
+[EL Fine]: sql: 2019-11-27 18:38:53.416--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_LIVRO ADD CONSTRAINT FK_TB_LIVRO_id_volume FOREIGN KEY (id_volume) REFERENCES TB_VOLUME (id_volume)
+[EL Fine]: sql: 2019-11-27 18:38:53.728--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_EMPRESTIMO ADD CONSTRAINT FK_TB_EMPRESTIMO_id_livro FOREIGN KEY (id_livro) REFERENCES TB_LIVRO (id_livro)
+[EL Fine]: sql: 2019-11-27 18:38:53.884--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:53.884--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: Can&apos;t create table &apos;bd_sae.#sql-650_41a&apos; (errno: 150)
+Error Code: 1005
+Call: ALTER TABLE TB_EMPRESTIMO ADD CONSTRAINT FK_TB_EMPRESTIMO_id_livro FOREIGN KEY (id_livro) REFERENCES TB_LIVRO (id_livro)
+Query: DataModifyQuery(sql=&quot;ALTER TABLE TB_EMPRESTIMO ADD CONSTRAINT FK_TB_EMPRESTIMO_id_livro FOREIGN KEY (id_livro) REFERENCES TB_LIVRO (id_livro)&quot;)
+[EL Fine]: sql: 2019-11-27 18:38:53.884--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_PROFESSOR ADD CONSTRAINT FK_TB_PROFESSOR_id_professor FOREIGN KEY (id_professor) REFERENCES TB_USUARIO (id_usuario)
+[EL Fine]: sql: 2019-11-27 18:38:54.29--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_ALUNO_x_TB_BOLSA ADD CONSTRAINT FK_TB_ALUNO_x_TB_BOLSA_id_aluno FOREIGN KEY (id_aluno) REFERENCES TB_USUARIO (id_usuario)
+[EL Fine]: sql: 2019-11-27 18:38:54.65--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--ALTER TABLE TB_ALUNO_x_TB_BOLSA ADD CONSTRAINT FK_TB_ALUNO_x_TB_BOLSA_id_bolsa FOREIGN KEY (id_bolsa) REFERENCES TB_BOLSA (id_bolsa)
+[EL Fine]: sql: 2019-11-27 18:38:54.696--ServerSession(603401608)--Thread(Thread[main,5,main])--SELECT 1
+[EL Warning]: 2019-11-27 18:38:54.696--ServerSession(603401608)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table &apos;bd_sae.tb_aluno_x_tb_bolsa&apos; doesn&apos;t exist
+Error Code: 1146
+Call: ALTER TABLE TB_ALUNO_x_TB_BOLSA ADD CONSTRAINT FK_TB_ALUNO_x_TB_BOLSA_id_bolsa FOREIGN KEY (id_bolsa) REFERENCES TB_BOLSA (id_bolsa)
+Query: DataModifyQuery(sql=&quot;ALTER TABLE TB_ALUNO_x_TB_BOLSA ADD CONSTRAINT FK_TB_ALUNO_x_TB_BOLSA_id_bolsa FOREIGN KEY (id_bolsa) REFERENCES TB_BOLSA (id_bolsa)&quot;)
+[EL Config]: connection: 2019-11-27 18:38:54.728--ServerSession(603401608)--Connection(103394766)--Thread(Thread[main,5,main])--disconnect
+[EL Info]: connection: 2019-11-27 18:38:54.728--ServerSession(603401608)--Thread(Thread[main,5,main])--file:/C:/Users/wolner/Desktop/meu Github/SistemaDeAssistenciaEstudantil/target/classes/_tarefas logout successful
+[EL Config]: connection: 2019-11-27 18:38:54.728--ServerSession(603401608)--Connection(1202547191)--Thread(Thread[main,5,main])--disconnect
+</system-out>
+  </testcase>
 </testsuite>

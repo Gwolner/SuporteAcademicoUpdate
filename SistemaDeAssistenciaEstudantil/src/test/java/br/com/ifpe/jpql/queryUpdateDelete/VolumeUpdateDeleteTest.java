@@ -31,21 +31,6 @@ public class VolumeUpdateDeleteTest extends GenericTest{
         assertEquals(param, tamanho.getDescricaoVolume());
     }
     
-//    @Test(expected = NoResultException.class)
-//    public void queryDelete() {
-//        logger.info("Executando queryDelete()");
-//        Long id = 5L;
-//        Query delete = em.createQuery("DELETE FROM Volume AS v WHERE v.idVolume = ?1");
-//        delete.setParameter(1, id);
-//        delete.executeUpdate();
-//        String jpql = "SELECT v FROM Volume v WHERE v.idVolume = ?1";
-//        TypedQuery<Volume> query = em.createQuery(jpql, Volume.class);
-//        query.setParameter(1, id);
-//        query.setHint("javax.persistence.cache.retrieveMode", CacheRetrieveMode.BYPASS);
-//        Volume bolsa = query.getSingleResult();
-//        assertNull(bolsa);
-//    }
-    
     @Test(expected = NoResultException.class)
     public void queryDelete() {
         logger.info("Executando queryDelete()");

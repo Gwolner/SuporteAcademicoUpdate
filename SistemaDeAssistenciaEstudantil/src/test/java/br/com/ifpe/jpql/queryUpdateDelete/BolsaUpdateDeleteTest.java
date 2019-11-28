@@ -30,21 +30,6 @@ public class BolsaUpdateDeleteTest extends GenericTest{
         assertEquals(valor, prof.getValor());
     }
     
-//    @Test(expected = NoResultException.class)
-//    public void queryDelete() {
-//        logger.info("Executando queryDelete()");
-//        Long id = 2L;
-//        Query delete = em.createQuery("DELETE FROM Bolsa AS b WHERE b.idBolsa = ?1");
-//        delete.setParameter(1, id);
-//        delete.executeUpdate();
-//        String jpql = "SELECT b FROM Bolsa b WHERE b.idBolsa = ?1";
-//        TypedQuery<Bolsa> query = em.createQuery(jpql, Bolsa.class);
-//        query.setParameter(1, id);
-//        query.setHint("javax.persistence.cache.retrieveMode", CacheRetrieveMode.BYPASS);
-//        Bolsa bolsa = query.getSingleResult();
-//        assertNull(bolsa);
-//    }
-    
     @Test(expected = NoResultException.class)
     public void queryDelete() {
         logger.info("Executando queryDelete()");

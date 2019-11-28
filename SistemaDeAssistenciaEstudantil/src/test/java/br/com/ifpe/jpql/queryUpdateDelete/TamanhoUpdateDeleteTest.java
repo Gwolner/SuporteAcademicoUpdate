@@ -31,21 +31,6 @@ public class TamanhoUpdateDeleteTest extends GenericTest{
         assertEquals(param, tamanho.getDescricaoTamanho());
     }
     
-//    @Test(expected = NoResultException.class)
-//    public void queryDelete() {
-//        logger.info("Executando queryDelete()");
-//        Long id = 5L;
-//        Query delete = em.createQuery("DELETE FROM Tamanho AS t WHERE t.idTamanho = ?1");
-//        delete.setParameter(1, id);
-//        delete.executeUpdate();
-//        String jpql = "SELECT t FROM Tamanho t WHERE t.idTamanho = ?1";
-//        TypedQuery<Tamanho> query = em.createQuery(jpql, Tamanho.class);
-//        query.setParameter(1, id);
-//        query.setHint("javax.persistence.cache.retrieveMode", CacheRetrieveMode.BYPASS);
-//        Tamanho bolsa = query.getSingleResult();
-//        assertNull(bolsa);
-//    }
-    
     @Test(expected = NoResultException.class)
     public void queryDelete() {
         logger.info("Executando queryDelete()");

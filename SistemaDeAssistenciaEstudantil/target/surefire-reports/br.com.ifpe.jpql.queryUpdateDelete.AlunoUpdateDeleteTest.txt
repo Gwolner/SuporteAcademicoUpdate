@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: br.com.ifpe.jpql.queryUpdateDelete.AlunoUpdateDeleteTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.449 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.611 sec

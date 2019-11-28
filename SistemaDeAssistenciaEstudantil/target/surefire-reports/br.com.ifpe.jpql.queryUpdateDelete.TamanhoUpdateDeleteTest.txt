@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: br.com.ifpe.jpql.queryUpdateDelete.TamanhoUpdateDeleteTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.969 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.203 sec
