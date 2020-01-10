@@ -1,6 +1,6 @@
 # Refatoração da entrega 2 de Descorp
 
-Entre as principais alterações destacam-se:
+Entre as principais inclusões e alterações destacam-se:
 
 * Criação de classes de consulta (SELECT) JPQL para cada entidade: Antes só havia uma única classe com vários tipos de consultas (MIN, MAX, BETWEEN, IN, COUNT, LIKE, ORDER BY e outras);
 
