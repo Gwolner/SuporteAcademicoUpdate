@@ -1,4 +1,10 @@
-# Refatoração da entrega 2 de Descorp
+# Segunda entrega Descorp - Remodelada
+
+## Projeto original
+
+As quatro entregas do projeto original podem ser vistas [aqui](https://github.com/Gwolner/entregas-descorp-sae).
+
+## Diferenças entre projetos
 
 Entre as principais inclusões e alterações destacam-se:
 
@@ -8,4 +14,4 @@ Entre as principais inclusões e alterações destacam-se:
 
 * Adição de NamedQuery nas entidades: Havia apenas CreateQuery realizando a maioria dos SELECTs do primeiro item;
 
-* Adição de dois JOINs, um AVG e um SUM: Itens solicitados durante a refatoração do projeto;
+* Adição de dois JOINs, um AVG e um SUM: Itens solicitados durante a refatoração do projeto.
