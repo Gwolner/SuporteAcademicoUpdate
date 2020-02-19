@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.com.ifpe.jpql.querySelect.AlunoSelectTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.625 sec
