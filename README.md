@@ -31,5 +31,5 @@ Os testes construidos com uso do JUnit tiveram resultados positivos.
 * <b>Testes de JPQL- UPDATE e DELETE/<b>
 <img src="img/jpql2.JPG">
 
-<b> * Testes de Validation</b>
+* <b>Testes de Validation</b>
 <img src="img/validation.JPG">
