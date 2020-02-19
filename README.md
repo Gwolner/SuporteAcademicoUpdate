@@ -1,8 +1,10 @@
-# Segunda entrega Descorp - Remodelada
+# Sistema de Suporte Acadêmico - Update
 
-## Projeto original
+Alterações da 2ª entrega do projeto SSA conforme solicitado pelo profº [Marcos André](https://github.com/marcosifpe) para pontuação extra na disciplina de Desenvolvimento de Software Corporativo (DesCorp).
 
-As quatro entregas do projeto original podem ser vistas [aqui](https://github.com/Gwolner/entregas-descorp-sae).
+## Projeto principal
+
+As quatro entregas que compõem o projeto principal podem ser vistas [aqui](https://github.com/Gwolner/entregas-descorp-sae). Cada entrega serviu para formação da nota durante as unidades avaliativas da disciplina.
 
 ## Diferenças entre projetos
 
@@ -15,3 +17,19 @@ Entre as principais inclusões e alterações destacam-se:
 * Adição de NamedQuery nas entidades: Havia apenas CreateQuery realizando a maioria dos SELECTs do primeiro item;
 
 * Adição de dois JOINs, um AVG e um SUM: Itens solicitados durante a refatoração do projeto.
+
+## Testes unitários
+
+Os testes construidos com uso do JUnit tiveram resultados positivos.
+
+* Testes de CRUD
+<img src="img/crud.JPG" >
+
+* Testes de JPQL- SELECT
+<img src="img/jpql1.JPG" align="center">
+
+* Testes de JPQL- UPDATE e DELETE
+<img src="img/jpql2.JPG" align="center">
+
+* Testes de Validation
+<img src="img/validation.JPG" align="center">
