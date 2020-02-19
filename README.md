@@ -4,7 +4,7 @@ Alterações da 2ª entrega do projeto SSA conforme solicitado pelo profº [Marc
 
 ## Projeto principal
 
-As quatro entregas que compõem o projeto principal podem ser vistas [aqui](https://github.com/Gwolner/entregas-descorp-sae). Cada entrega serviu para formação da nota durante as unidades avaliativas da disciplina.
+As quatro entregas que compõem o projeto principal podem ser vistas [aqui](https://github.com/Gwolner/entregas-descorp-sae). Cada entrega serviu para formação das notas durante as unidades avaliativas da disciplina.
 
 ## Diferenças entre projetos
 
@@ -22,14 +22,14 @@ Entre as principais inclusões e alterações destacam-se:
 
 Os testes construidos com uso do JUnit tiveram resultados positivos.
 
-* Testes de CRUD
-<img src="img/crud.JPG" >
+* <b>Testes de CRUD</b>
+<img src="img/crud.JPG">
 
-* Testes de JPQL- SELECT
-<img src="img/jpql1.JPG" align="center">
+* <b>Testes de JPQL- SELECT</b>
+<img src="img/jpql1.JPG">
 
-* Testes de JPQL- UPDATE e DELETE
-<img src="img/jpql2.JPG" align="center">
+* <b>Testes de JPQL- UPDATE e DELETE/<b>
+<img src="img/jpql2.JPG">
 
-* Testes de Validation
-<img src="img/validation.JPG" align="center">
+<b> * Testes de Validation</b>
+<img src="img/validation.JPG">
