@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: br.com.ifpe.jpql.querySelect.VolumeSelectTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.609 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.906 sec

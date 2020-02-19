@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="br.com.ifpe.crud.ProfessorCrudTest" time="9.156" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="br.com.ifpe.crud.ProfessorCrudTest" time="12.25" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Arquivos de programas\Java\jdk1.8.0_141\jre\bin"/>
@@ -62,8 +62,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase classname="br.com.ifpe.crud.ProfessorCrudTest" name="atualizarProfessorMerge" time="0.063"/>
-  <testcase classname="br.com.ifpe.crud.ProfessorCrudTest" name="removerProfessor" time="0.031"/>
-  <testcase classname="br.com.ifpe.crud.ProfessorCrudTest" name="persistirProfessor" time="0.031"/>
-  <testcase classname="br.com.ifpe.crud.ProfessorCrudTest" name="atualizarProfessor" time="0.031"/>
+  <testcase classname="br.com.ifpe.crud.ProfessorCrudTest" name="atualizarProfessorMerge" time="0.047"/>
+  <testcase classname="br.com.ifpe.crud.ProfessorCrudTest" name="removerProfessor" time="0.047"/>
+  <testcase classname="br.com.ifpe.crud.ProfessorCrudTest" name="persistirProfessor" time="0.047"/>
+  <testcase classname="br.com.ifpe.crud.ProfessorCrudTest" name="atualizarProfessor" time="0.078"/>
 </testsuite>
